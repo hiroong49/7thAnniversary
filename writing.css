@@ -9,7 +9,7 @@
     font-weight: bold;
 }
 
-.next {
+#next_btn {
     background-color: black;
     color: white;
     border-radius: 50px;
@@ -18,12 +18,12 @@
     width: 500px;
 }
 
-.next[disabled] {
+#next_btn[disabled] {
     opacity: 0.2;
     cursor: not-allowed;
 }
 
-input.ic_rose {
+input#ic_rose {
     background-image: url(/media/ic_rose.png);
     background-color: rgb(253, 245, 245);
     border: none;           
@@ -34,7 +34,7 @@ input.ic_rose {
     background-size: contain;
 }
 
-input.ic_rose_frag {
+input#ic_rose_frag {
     background-image: url(/media/ic_rose_frag.png);
     background-color: rgb(253, 245, 245);
     border: none;           
@@ -44,7 +44,7 @@ input.ic_rose_frag {
     width: 150px;
     background-size: contain;
 }
-input.ic_compass {
+input#ic_compass {
     background-image: url(/media/ic_compass.png);
     background-color: rgb(253, 245, 245);
     border: none;           
