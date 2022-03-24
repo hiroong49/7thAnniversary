@@ -10,18 +10,23 @@
     <a href="#" onClick="history.back();"><i class="fa-solid fa-chevron-left"></i></a>
 
         <label>닉네임</label>
-        <input type="text" name="userid" id="uid" rows="1" cols="30" placeholder="닉네임" maxlength="100" required></textarea>
+        <input type="text" name="userid" id="uid" rows="1" cols="30" placeholder="닉네임" maxlength="100" required>
     
     <div>
         <label>사진</label>
+        <input id="real-input" type="file" style="display:none" accept="image/*" onchange="loadfile(this)">
+        <button class="image-upload">사진 업로드</button>
+        <h3>이미지 미리보기</h3>
+        <div id="imagePreview">
+            <img id="uploadImage"/>
+        </div>
     </div>
     <div>
         <label>전할 말</label>
         <textarea id="content" type="text" rows="10" cols="50">/</textarea>
     </div>
-
-    <div>
-        <input type="button" value="바다에 띄우기"></input>
+<!--제출버튼-->
+        <button type="submit">바다에 띄우기</button>
     </div>
     </body>
 </html>
