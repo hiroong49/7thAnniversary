@@ -9,6 +9,23 @@
     font-weight: bold;
 }
 
+.btn {
+    background-color: rgb(253, 245, 245);
+    border: none;           
+    cursor: pointer;                 
+    border-radius: 30px;
+    height: 150px;
+    width: 150px;
+    background-size: contain;
+    opacity: 0.6;
+    transition-duration: 0.3s;
+}
+
+.active, .btn:hover {
+    border-style: groove;
+    opacity: 1;
+}
+
 #next_btn {
     background-color: black;
     color: white;
@@ -25,72 +42,22 @@
 
 input#ic_rose {
     background-image: url(/media/ic_rose.png);
-    background-color: rgb(253, 245, 245);
-    border: none;           
-    cursor: pointer;                 
-    border-radius: 30px;
-    height: 150px;
-    width: 150px;
-    background-size: contain;
 }
-
 input#ic_rose_frag {
     background-image: url(/media/ic_rose_frag.png);
-    background-color: rgb(253, 245, 245);
-    border: none;           
-    cursor: pointer;                 
-    border-radius: 30px;
-    height: 150px;
-    width: 150px;
-    background-size: contain;
 }
 input#ic_compass {
     background-image: url(/media/ic_compass.png);
-    background-color: rgb(253, 245, 245);
-    border: none;           
-    cursor: pointer;                 
-    border-radius: 30px;
-    height: 150px;
-    width: 150px;
-    background-size: contain;
 }
-input.ic_bottle_letter {
+input#ic_bottle_letter {
     background-image: url(/media/ic_bottle_letter.png);
-    background-color: rgb(253, 245, 245);
-    border: none;           
-    cursor: pointer;                 
-    border-radius: 30px;
-    height: 150px;
-    width: 150px;
-    background-size: contain;
 }
-input.ic_bottle_heart {
+input#ic_bottle_heart {
     background-image: url(/media/ic_bottle_heart.png);
-    background-color: rgb(253, 245, 245);
-    border: none;           
-    cursor: pointer;                 
-    border-radius: 30px;
-    height: 150px;
-    width: 150px;
-    background-size: contain;
 }
-input.ic_white_whale {
+input#ic_white_whale {
     background-image: url(/media/ic_white_whale.png);
-    background-color: rgb(253, 245, 245);
-    border: none;           
-    cursor: pointer;                 
-    border-radius: 30px;
-    height: 150px;
-    width: 150px;
-    background-size: contain;
 }
-input.ic_whale {
+input#ic_whale {
     background-image: url(/media/ic_whale.png);
-    background-color: rgb(253, 245, 245);
-    border: none;           
-    cursor: pointer;                 
-    border-radius: 30px;
-    height: 150px;
-    width: 150px;
-    background-size: contain;
 }
