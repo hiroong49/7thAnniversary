@@ -13,9 +13,10 @@ const countDownTimer = function (id, date) {
 
         var background = document.getElementById("background");
         
+        // 목표 시간 되면
         if (distDt < 0) { 
             clearInterval(timer); 
-
+            window.location.href = '../after_514/after_home.html'
             return; 
         } 
         
