@@ -21,5 +21,5 @@ function select_icon() {
 
 // 다음으로 버튼 이벤트 처리 
 function to_letter() {
-    window.location.href = 'letter.html'
+    window.location.href = '../letter_writing/letter.html'
 }
