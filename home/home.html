@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/066f39e5ce.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="home.css">
     <script type="text/javascript" src="home.js"></script>
     <title>Monsta_x 7th</title>
@@ -11,20 +12,25 @@
 <body>
     <!-- 배경화면 설정 -->
     <div class="background">
-        <div id="div1">
-        <p id="annaeText">바다로 흘러간 편지는 5월 14일 00시에 도착합니다</p>
-        <p id="demo"></p></div>
+        <div class="layer">
+            <div id="div1">
+                <p id="annaeText">바다로 흘러간 편지는 5월 14일 00시에 도착합니다</p>
+                <p id="demo"></p>
+            </div>
+            <a href="../letter_icon/writing.html" class="float_letter">편지 띄우기
+                &nbsp;<i class="fa-solid fa-arrow-right-long"></i>
+            </a>        
+        </div>
     </div>
     <!--네브바 시작-->
     <div class="header">
         <div class="section">
-            <div class="logo">
-                <!--onClick="location.reload();"-->
-                <a href="#" onclick="location.href='writing.html'">MONSTA X 7th Anniversary</a>
+            <div>
+                <a href="home.html" class="logo">MONSTA X 7th Anniversary</a>
             </div>
             <!--햄버거 메뉴 시작-->
-            <input type="checkbox" id="icon">
-            <label for="icon">  <!--label은 인라인 스타일-->
+            <!-- <input type="checkbox" id="icon">
+            <label for="icon"> 
                 <span></span>
                 <span></span>
                 <span></span>
@@ -37,7 +43,7 @@
                     <li><a href="#">menu1</a></li>
                     <li><a href="#">menu1</a></li>
                 </ul>
-            </div>
+            </div> -->
             <!--햄버거 메뉴 끝-->
         </div>
     </div>

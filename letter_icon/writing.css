@@ -1,12 +1,29 @@
 *{
     box-sizing: border-box;
-    text-decoration: none;
     list-style: none;
 }
 
+body {
+    background-color: white;
+}
+
+i {
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: larger;
+}
 .title {
     font-size: 18px;
     font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.div1 {
+    text-align: center;
 }
 
 .btn {
@@ -14,11 +31,10 @@
     border: none;           
     cursor: pointer;                 
     border-radius: 30px;
-    height: 150px;
-    width: 150px;
     background-size: contain;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     transition-duration: 0.3s;
+    margin: 5px;
 }
 
 .active, .btn:hover {
@@ -26,13 +42,16 @@
     opacity: 1;
 }
 
+.div2 {
+    text-align: center;
+}
+
 #next_btn {
     background-color: black;
     color: white;
     border-radius: 50px;
-    font-size: 16px;
-    height: 50px;
-    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #next_btn[disabled] {
@@ -40,6 +59,9 @@
     cursor: not-allowed;
 }
 
+input {
+    background-repeat: no-repeat;
+}
 input#ic_rose {
     background-image: url(/media/ic_rose.png);
 }
@@ -55,9 +77,85 @@ input#ic_bottle_letter {
 input#ic_bottle_heart {
     background-image: url(/media/ic_bottle_heart.png);
 }
-input#ic_white_whale {
-    background-image: url(/media/ic_white_whale.png);
-}
 input#ic_whale {
     background-image: url(/media/ic_whale.png);
+}
+input#ic_boongbbang {
+    background-image: url(/media/ic_boongbbang.png);
+}
+input#ic_duck {
+    background-image: url(/media/ic_duck.png);
+}
+input#ic_shark {
+    background-image: url(/media/ic_shark.png);
+}
+input#ic_moonstar {
+    background-image: url(/media/ic_moonstar.png);
+}
+input#ic_cake {
+    background-image: url(/media/ic_cake.png);
+}
+input#ic_purple_heart {
+    background-image: url(/media/ic_purple_heart.png);
+}
+input#ic_hamzzi {
+    background-image: url(/media/ic_hamzzi.png);
+}
+input#ic_shootingstar {
+    background-image: url(/media/ic_shootingstar.png);
+}
+input#ic_earth {
+    background-image: url(/media/ic_earth.png);
+}
+input#ic_socute_cat {
+    background-image: url(/media/ic_socute_cat.png);
+}
+
+/* 핸드폰 */
+@media ( max-width: 768px ) {
+    .btn {
+        height: 120px;
+        width: 120px;
+    }
+    #next_btn {
+        font-size: 16px;
+        height: 50px;
+        width: 350px;
+    }
+}
+/* 테블릿 세로 */
+@media (min-width: 768px) and (max-width: 991px) {
+    .btn {
+        height: 120px;
+        width: 120px;
+    }
+    #next_btn {
+        font-size: 16px;
+        height: 50px;
+        width: 350px;
+    }
+}
+/* 테블릿 가로 */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .btn {
+        height: 120px;
+        width: 120px;
+    }
+    #next_btn {
+        font-size: 16px;
+        height: 50px;
+        width: 350px;
+    }
+}
+/* 데스크탑 */
+@media ( min-width: 1024px ) {
+    .btn {
+        height: 150px;
+        width: 150px;
+    }
+    #next_btn {
+        font-size: 16px;
+        height: 50px;
+        width: 500px;
+    }
 }
