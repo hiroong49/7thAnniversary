@@ -13,9 +13,10 @@ const countDownTimer = function (id, date) {
 
         var background = document.getElementById("background");
         
+        // 목표 시간 되면
         if (distDt < 0) { 
             clearInterval(timer); 
-
+            window.location.href = '../after_514/after_home.html'
             return; 
         } 
         
@@ -37,6 +38,4 @@ dateObj.setDate(dateObj.getDate() + 1);
 
 //countDownTimer('demo', '03/25/2022 09:00 PM');
 countDownTimer('demo', '05/14/2022 00:00 AM');
-
-
 
