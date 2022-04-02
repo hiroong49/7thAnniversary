@@ -7,6 +7,11 @@ body {
     background-color: white;
 }
 
+.bg {
+    background-color: rgb(8, 56, 64);
+    padding-top: 20px;
+    margin: 0 auto;
+}
 i {
     text-decoration: none;
     color: black;
@@ -20,6 +25,7 @@ i {
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
+    color: white;
 }
 
 .div1 {
@@ -37,16 +43,16 @@ i {
     margin: 5px;
 }
 
-.active, .btn:hover {
+/* .active, .btn:hover {
     border-style: groove;
     opacity: 1;
-}
+} */
 
 .div2 {
     text-align: center;
 }
 
-#next_btn {
+/* #next_btn {
     background-color: black;
     color: white;
     border-radius: 50px;
@@ -57,7 +63,7 @@ i {
 #next_btn[disabled] {
     opacity: 0.2;
     cursor: not-allowed;
-}
+} */
 
 input {
     background-repeat: no-repeat;
@@ -96,7 +102,7 @@ input#ic_cake {
     background-image: url(/media/ic_cake.png);
 }
 input#ic_purple_heart {
-    background-image: url(/media/ic_purple_heart.png);
+    background-image: url(/media/ic_purpleheart.PNG);
 }
 input#ic_hamzzi {
     background-image: url(/media/ic_hamzzi.png);
@@ -108,54 +114,76 @@ input#ic_earth {
     background-image: url(/media/ic_earth.png);
 }
 input#ic_socute_cat {
-    background-image: url(/media/ic_socute_cat.png);
+    background-image: url(/media/ic_socute.PNG);
 }
 
 /* 핸드폰 */
 @media ( max-width: 768px ) {
-    .btn {
-        height: 120px;
-        width: 120px;
+    .bg {
+        margin-top: 20px;
+        border-radius: 60px;
+        width: 90%;
     }
-    #next_btn {
+    .btn {
+        height: 100px;
+        width: 100px;
+    }
+    /* #next_btn {
         font-size: 16px;
         height: 50px;
         width: 350px;
-    }
+    } */
 }
 /* 테블릿 세로 */
 @media (min-width: 768px) and (max-width: 991px) {
+    .bg {
+        margin-top: 20px;
+        border-radius: 60px;
+        width: 90%;
+    }
     .btn {
         height: 120px;
         width: 120px;
     }
-    #next_btn {
+    /* #next_btn {
         font-size: 16px;
         height: 50px;
         width: 350px;
-    }
+    } */
 }
 /* 테블릿 가로 */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .bg {
+        width: 90%;
+        height: auto;
+        border-radius: 100px;
+        margin-top: 20px;
+    }
     .btn {
         height: 120px;
         width: 120px;
     }
-    #next_btn {
+    /* #next_btn {
         font-size: 16px;
         height: 50px;
         width: 350px;
-    }
+    } */
 }
 /* 데스크탑 */
 @media ( min-width: 1024px ) {
+    .bg {
+        width: 717px;
+        height: auto;
+        border-radius: 100px;
+        margin-top: 20px;
+    }
     .btn {
         height: 150px;
         width: 150px;
     }
-    #next_btn {
+    /* #next_btn {
         font-size: 16px;
         height: 50px;
         width: 500px;
-    }
+    } */
 }
