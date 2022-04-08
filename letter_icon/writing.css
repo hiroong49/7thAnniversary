@@ -68,6 +68,27 @@ i {
 input {
     background-repeat: no-repeat;
 }
+input#ic_hyunwoo {
+    background-image: url(/media/ic_hyunwoo.PNG);
+}
+input#ic_minhyuk {
+    background-image: url(/media/ic_minhyuk.PNG);
+}
+input#ic_kihyun {
+    background-image: url(/media/ic_kihyun.PNG);
+}
+input#ic_hyungwon {
+    background-image: url(/media/ic_hyungwon.PNG);
+}
+input#ic_joohoney {
+    background-image: url(/media/ic_joohoney.PNG);
+}
+input#ic_changkyun {
+    background-image: url(/media/ic_changkyun.PNG);
+}
+input#ic_paper_boat {
+    background-image: url(/media/ic_paper_boat.PNG);
+}
 input#ic_rose {
     background-image: url(/media/ic_rose.png);
 }
