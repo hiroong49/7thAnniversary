@@ -12,8 +12,21 @@ body {
 }
 
 .div2{
-    margin: 100px;
-    padding: 50px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.div3{
+    margin: 20px;
+    padding: 20px;
+}
+
+#uploadFile{
+    visibility: hidden;
+}
+
+.div4{
+    border-style: dotted;
 }
 
 #submit_btn {

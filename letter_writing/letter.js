@@ -10,3 +10,8 @@ function readFile(event){
        reader.readAsDataURL(event.target.files[0]);
 }
 
+function inputFile(){
+    var uploadFile=document.getElementById("uploadFile");
+    uploadFile.click();
+}
+
