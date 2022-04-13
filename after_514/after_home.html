@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="yes" name="apple-mobile-web-app-capable" /> 
+    <meta content="width=device-width," name="viewport" />   
+    <!-- <meta name="viewport" content="user-scalable=0;"/> -->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="after_home.css">
     <script type="text/javascript" src="after_home.js"></script>
@@ -11,45 +13,62 @@
 </head>
 <body>
     
-    <div class="topnav">
+    <!-- <div class="topnav">
         <a href="../after_514/after_home.html" class="logo">Time in a bottle</a>
         <div class="topnav-right" id="topnav-right">
             <a><input type="text" id="mySearch" onkeyup="search()" placeholder="닉네임으로 편지 찾기" title="Type in a category">
                 <i class="fa-light fa-magnifying-glass"></i></a>            
             <a href="#" class="service">개발자 문의</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i> 
-        </a>
-    </div>
+        
+    </div> -->
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
     
+        <ul class="menu__box">
+            <a class="ic_search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <li><input type="text" id="mySearch" onkeyup="search()" placeholder="닉네임으로 편지 찾기" title="Type in a category">
+            </li>
+            <li><a class="cafe" href="#">데뷔 카페 리스트</a></li>
+            <li><a class="service" href="#">개발자 문의</a></li>
+        </ul>
+    </div>
+    <!-- <input class="burger-check" type="checkbox" id="burger-check" /><label class="burger-icon" for="burger-check"><span class="burger-sticks"></span></label>
+        <div class="menu">
+            <div>
+                <a><input type="text" id="mySearch" onkeyup="search()" placeholder="닉네임으로 편지 찾기" title="Type in a category">
+                    <i class="fa-light fa-magnifying-glass"></i></a><br>            
+                    <a href="#" class="cafe">데뷔 카페 리스트</a><br>
+                    <a href="#" class="service">개발자 문의</a>
+            </div>
+        </div> -->
 
     <!-- 배경화면 설정 -->
     <div class="background">
+        
         <!-- 편지지 아이콘 떠다니기 -->
-        <div onclick="click_letter()">
+        <div>
             <div class="div1">
-                <div class="duo" id="duo" style="left: 0px; top: 0px;">
+                <div class="duo" id="duo" onclick="click_letter()" style="left: 0px; top: 30px;">
                     <input type="button" class="btn" id="ic_rose"></input>
                     <p>동대문 쿨키드</p>
                 </div>
-                <div class="duo" style="left: 10px; top: 0px;">
+                <div class="duo" onclick="click_letter()" style="left: 10px; top: 0px;">
                     <input type="button" class="btn" id="ic_bottle_letter"></input>
                     <p>동대문 쿨키드</p>
                 </div>
-                <div class="duo" style="left: 70px; top: 80px;">
+                <div class="duo" onclick="click_letter()" style="left: 70px; top: 80px;">
                     <input type="button" class="btn" id="ic_bottle_heart"></input>
                     <p>몽베베</p>
                 </div>
-                <div class="duo" style="left: 100px; top: 200px;">
-                    <input type="button" class="btn" id="ic_compass"></input>
-                    <p>청담동 소금쟁이</p>
-                </div>
-                <div class="duo" style="left: 0px; top: 0px;">
+                <div class="duo" onclick="click_letter()" style="left: 0px; top: 0px;">
                     <input type="button" class="btn" id="ic_bottle_heart"></input>
                     <p>청담동 소금쟁이</p>
                 </div>
-                <div class="duo" style="left: 30px; top: 130px;">
+                <div class="duo" onclick="click_letter()" style="left: 30px; top: 500px;">
                     <input type="button" class="btn" id="ic_bottle_letter"></input>
                     <p>동대문 쿨키드</p>
                 </div>

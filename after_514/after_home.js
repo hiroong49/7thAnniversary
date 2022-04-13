@@ -1,31 +1,16 @@
-// 이미지 랜덤 배치
-// window.onload=function randomLoc() {
-//     var randomNum = 0;
-//     var duo = document.getElementsByClassName("duo");
-    
-//     for(var i = 0; i < duo.length; i++) {
-//         randomNum = Math.floor(Math.random() * 500) + 1;
-//         duo[i].style.top = randomNum + "px";
-//         randomNum = Math.floor(Math.random() * 1000) + 1;
-//         duo[i].style.left = randomNum + "px";
-//         duo[i].style.clear = "both";
-//     }
-    
+// 햄버거 메뉴 
+// function hamburger(x) {
+//     x.classList.toggle("change");
 // }
 
-// 햄버거 메뉴 
-function hamburger(x) {
-    x.classList.toggle("change");
-}
-
-function myFunction() {
-    var x = document.getElementById("topnav-right");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-}
+// function myFunction() {
+//     var x = document.getElementById("topnav-right");
+//     if (x.style.display === "block") {
+//         x.style.display = "none";
+//     } else {
+//         x.style.display = "block";
+//     }
+// }
 
 function search() {
     // Declare variables
@@ -59,5 +44,5 @@ const print_buttons = function(id, num) {
 
 // 아이콘 클릭하면 해당 메세지 보임 
 function click_letter() {
-    window.location.href = '../letter_icon/writing.html'
+    window.location.href = '../after_letter/after_letter.html'
 }
