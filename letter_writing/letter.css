@@ -30,6 +30,13 @@ i {
     top: 20%;
     left: 20%;
 }
+#uploadFile{
+    visibility: hidden;
+}
+
+.div4{
+    border-style: dotted;
+}
 
 #submit_btn {
     background-color: black;
