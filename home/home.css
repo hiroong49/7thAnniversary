@@ -14,12 +14,26 @@
     font-family: '나눔손글씨 초딩희망';
     src: url('../fonts/나눔손글씨 초딩희망.ttf');
 }
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HSYuji-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     -webkit-text-size-adjust:none;
-    font-family: '나눔손글씨 초딩희망', 'Nanum CoDingHeuiMang', 'Nanum CoDingHeuiMang';
+    /* font-family: 'LeeSeoyun', 'LeeSeoyun', 'LeeSeoyun'; */
+    font-family: 'HSYuji-Regular', 'HSYuji-Regular', 'HSYuji-Regular';
+    /* font-family: '나눔손글씨 초딩희망', 'Nanum CoDingHeuiMang', 'Nanum CoDingHeuiMang'; */
 }
 
 .background {
@@ -138,11 +152,9 @@ a {
     display: block;
     padding: 12px 24px;
     font-size: 18px;
-    font-weight: 600;
     transition-duration: .25s;
     top: 50px;
     font-size: 1.5em;
-    font-weight: 800;
 }
 .cafe:hover {
     color: white;
@@ -158,11 +170,9 @@ a {
     display: block;
     padding: 12px 24px;
     font-size: 18px;
-    font-weight: 600;
     transition-duration: .25s;
     top: 80px;
     font-size: 1.5em;
-    font-weight: 800;
 }
 .service:hover {
     color: white;
@@ -186,7 +196,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 900;
 }
 .float_letter:link, .float_letter:visited {
     color: white;
@@ -203,12 +212,11 @@ a {
     #annaeText {
         text-align: center;
         margin-top: 50%;
-        font-size: 1.2rem;
         margin-left: 15%;
         margin-right: 15%;
         color: rgb(255, 255, 255);
-        font-weight: 900;
         font-size: 1.7em;
+        line-height: 150%;
     }
     #demo {
         margin-top: 60px;
@@ -236,7 +244,6 @@ a {
         text-align: center;
         margin-top: 30%;
         font-size: 2.6rem;
-        font-weight: 900;
         margin-left: 15%;
         margin-right: 15%;
         color: rgb(255, 255, 255);
@@ -262,7 +269,6 @@ a {
         text-align: center;
         place-items: center;
         font-size: 2.6rem;
-        font-weight: 900;        
         margin-bottom: -40px;
     }
     #demo {
@@ -279,15 +285,16 @@ a {
         display: block;
         justify-content: center;
     }
-    .header {
+    /* .header {
         position: fixed;
         height: 80px;
         width: 1720px;
         margin: 0px auto;
-    }
+    } */
 
     #div1 {
-        margin-top: 250px;
+        position: relative;
+        top: 25%;
     }
 
     #annaeText {
@@ -302,8 +309,9 @@ a {
         font-size: 7rem;
     }
     .float_letter {
-        font-size: 1.5rem;
-        margin-top: 80px;
+        position: relative;
+        top: 25%;
+        font-size: 2rem;
     }
     
     /* .section {
