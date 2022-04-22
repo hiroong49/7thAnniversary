@@ -2,11 +2,18 @@
     font-family: '나눔손글씨 초딩희망';
     src: url('../fonts/나눔손글씨 초딩희망.ttf');
 }
+@font-face {
+    font-family: 'HSYuji-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/HSYuji-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     box-sizing: border-box;
     list-style: none;
     -webkit-text-size-adjust:none;
-    font-family: '나눔손글씨 초딩희망', 'Nanum CoDingHeuiMang', 'Nanum CoDingHeuiMang';
+    /* font-family: '나눔손글씨 초딩희망', 'Nanum CoDingHeuiMang', 'Nanum CoDingHeuiMang'; */
+    font-family: 'HSYuji-Regular','HSYuji-Regular','HSYuji-Regular';
 }
 
 body {
@@ -168,10 +175,6 @@ input#ic_socute_cat {
     } */
 }
 @media ( min-width: 412px ) and ( max-width: 768px ) {
-    .title {
-        font-size: 1.4em;
-        font-weight: 800;
-    }
     .bg {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -191,10 +194,6 @@ input#ic_socute_cat {
 }
 /* 테블릿 세로 */
 @media (min-width: 768px) and (max-width: 991px) {
-    .title {
-        font-size: 2em;
-        font-weight: 800;
-    }
     .bg {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -214,10 +213,6 @@ input#ic_socute_cat {
 }
 /* 테블릿 가로 */
 @media (min-width: 992px) and (max-width: 1199px) {
-    .title {
-        font-size: 2em;
-        font-weight: 800;
-    }
     .bg {
         width: 90%;
         height: auto;
@@ -238,10 +233,6 @@ input#ic_socute_cat {
 }
 /* 데스크탑 */
 @media ( min-width: 1024px ) {
-    .title {
-        font-size: 2em;
-        font-weight: 800;
-    }
     .bg {
         width: 717px;
         height: auto;

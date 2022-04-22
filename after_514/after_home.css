@@ -3,21 +3,13 @@
     text-decoration: none;
     list-style: none;
 }
-/* html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-} */
 body {
     width: 100%;
     margin: 0;
-    /* -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box; */
 }
 .background {
-    width: 100vw;
-    
-    overflow-x: hidden;
+    width: 100%;
+    overflow-x: auto;
     /* display: block;
     justify-content: center; */
 }
@@ -25,27 +17,37 @@ body {
     content: "";
     display: block;
     background-size: contain;
-    background-image: url(../media/bg_garo.png);
-    background-repeat: repeat-y;
+    z-index: -1;
+    animation: bgScrollLeft 1s linear infinite;
+}
+.sliding-background {
+    height: 5000px;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -1;
 }
 
 /* 닉네임 출력 */
 p {
     color: white;
 }
-
 .duo {
     position:relative;
     display: inline-block;
     text-align: center;
-}
+    animation: infiniteScrollBg 40s linear infinite;
 
+}
+@keyframes infiniteScrollBg {
+    0% {
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 0 30px;
+    }
+}
 /* 네브바 시작 */
 #menu__toggle {
     opacity: 0;
@@ -69,8 +71,8 @@ p {
     display: flex;
     align-items: center;
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 33px;
+    left: 33px;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -182,7 +184,10 @@ p {
 }
 
 /* 온라인 웹 디자인 */
-@media ( max-width: 768px ) {    
+@media ( max-width: 768px ) {  
+    .sliding-background {        
+        background: url(../media/bg_home_sero.jpeg) repeat-y;
+    }
     .burger-check:checked~.menu {
         max-width: 250px;
     }
@@ -203,6 +208,9 @@ p {
 }
 
 @media ( min-width: 1024px ) {
+    .sliding-background {
+        background: url(../media/bg_garo.png) repeat;
+    }
     .burger-check:checked~.menu {
         max-width: 400px;
     }
