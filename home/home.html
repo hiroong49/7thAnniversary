@@ -10,6 +10,9 @@
     <title>Monsta_x 7th</title>
 </head>
 <body>
+    <div class="menu">
+        <div style="width: 200px;"></div>
+    </div>
     <!-- 배경화면 설정 -->
     <div class="background">
         <div class="layer">
@@ -25,25 +28,21 @@
     <!--네브바 시작-->
     <div class="header">
         <div class="section">
-            <div>
-                <a href="home.html" class="logo">MONSTA X 7th Anniversary</a>
-            </div>
-            <!--햄버거 메뉴 시작-->
-            <!-- <input type="checkbox" id="icon">
-            <label for="icon"> 
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <div id="menu">
-                <ul>
-                    <li><a href="#" onclick="location.href='writing.html'">글 쓰기</a></li>
-                    <li><a href="#">menu1</a></li>
-                    <li><a href="#">menu1</a></li>
-                    <li><a href="#">menu1</a></li>
-                    <li><a href="#">menu1</a></li>
-                </ul>
+            <!-- <div>
+                <a href="home.html" class="logo">Time in a bottle</a>
             </div> -->
+            <!--햄버거 메뉴 시작-->
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                    <li><a class="cafe" href="../debut_cafe/debut_cafe.html">데뷔 카페 리스트</a></li>
+                    <li><a class="service" href="#">개발자 문의</a></li>
+                </ul>
+            </div>
             <!--햄버거 메뉴 끝-->
         </div>
     </div>
