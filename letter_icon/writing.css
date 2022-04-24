@@ -153,10 +153,6 @@ input#ic_socute_cat {
 
 /* 핸드폰 */
 @media ( max-width: 412px ) {
-    .title {
-        font-size: 1.4em;
-        font-weight: 800;
-    }
     .bg {
         padding-top: 20px;
         padding-bottom: 20px;
