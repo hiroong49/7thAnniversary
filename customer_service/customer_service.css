@@ -11,9 +11,6 @@
     -webkit-text-size-adjust:none;
     font-family: 'HSYuji-Regular', 'HSYuji-Regular', 'HSYuji-Regular';
 }
-/* body {
-    background-color: #e8e8e8;
-} */
 i {
     text-decoration: none;
     color: black;
@@ -21,59 +18,41 @@ i {
     margin-left: 10px;
     font-size: larger;
 }
-h2 {
-    position: relative;
-    left: 7%;
-    top: 7%;
+div {
+    text-align: center;
 }
-a {
-    text-decoration: none;
-    color: rgb(250, 243, 225);
-    font-size: 18px;
+.btn_box {
+    padding: 20px;
 }
-img {
-    position: relative;
-    border-radius: 50%;
-    z-index: 1;
-    top: 65px;
-    left: 50px;
+button {
+    background-color: rgb(8, 56, 64);
+    color: white;
+    border-radius: 20px 20px 20px 20px;
 }
 p {
-    color: rgb(250, 243, 225);
-}
-.contents {
-    position: relative;
-    top: -50px;
-}
-.container {
-    width: 200px;
-    height: 150px;
-    background-color: rgb(8, 56, 64);
-    border-radius: 40px 40px 40px 40px;
-    text-align: center;
-    z-index: 0;
-}
-.div {
-    position: relative;
-    top: 40%;
-}
-.div1 {
-    margin: auto 20%;
-}
-.div2 {
-    text-align: center;
-}
-.msg {
+    margin-top: 30px;
     color: gray;
-    font-size: 14px;
-    margin: 50px;
 }
-.address {
-    color: rgb(8, 56, 64);
+button:hover {
+    background-color: rgb(250, 243, 225);
+    color: black;
+}
+button:visited {
+    background-color: rgb(8, 56, 64);
+    color: white;
 }
 /* 핸드폰 */
 @media ( max-width: 767px ) {
-    
+    img {
+        width: 200px;
+        border-radius: 50%;
+        margin-top: 10%;
+    }
+    button {
+        margin: 20px;
+        width: 200px;
+        height: 50px;
+    }
 }
 @media ( min-width: 412px ) and ( max-width: 768px ) {
     
@@ -88,7 +67,14 @@ p {
 }
 /* 데스크탑 */
 @media ( min-width: 1024px ) {
-    .contents {
-        left: 10%;
+    img {
+        width: 300px;
+        border-radius: 50%;
+        margin-top: 5%;
+    }
+    button {
+        margin: 20px;
+        width: 200px;
+        height: 50px;
     }
 }
