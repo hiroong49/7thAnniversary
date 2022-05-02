@@ -18,7 +18,7 @@ function inputFile(){
 }
 
 function writing() {
-    if(document.getElementById("content").value == "" || document.getElementById("nickname").value == "") {
+    if(document.getElementById("nickname").value == "" || document.getElementById("content").value == "") {
         document.getElementById("submit_btn").disabled = true;
     } else {
         document.getElementById("submit_btn").disabled = false;
